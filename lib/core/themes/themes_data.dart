@@ -17,7 +17,7 @@ import 'package:flutter/material.dart'
         OutlineInputBorder,
         BoxConstraints,
         InputDecorationTheme;
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'colors.dart';
 import 'text_styles.dart';
 
@@ -28,15 +28,15 @@ abstract final class AppThemes {
       scaffoldBackgroundColor: AppColors.backgroundLight,
       primaryColor: AppColors.primary500,
       textTheme: TextTheme(
-        bodyLarge: AppTextStyles.bodyLargeRegular,
-        bodyMedium: AppTextStyles.bodyBaseRegular,
+        bodyLarge: AppTextStyles.bodyLargeBold,
+        bodyMedium: AppTextStyles.bodyBaseSemiBold,
         bodySmall: AppTextStyles.bodySmallRegular,
         displayLarge: AppTextStyles.heading1Bold,
-        displayMedium: AppTextStyles.heading2Regular,
-        displaySmall: AppTextStyles.heading3Regular,
-        headlineLarge: AppTextStyles.heading4Regular,
-        headlineMedium: AppTextStyles.heading5Bold,
-        headlineSmall: AppTextStyles.heading5Regular,
+        displayMedium: AppTextStyles.heading2SemiBold,
+        displaySmall: AppTextStyles.heading3SemiBold,
+        headlineLarge: AppTextStyles.heading4Bold,
+        headlineMedium: AppTextStyles.heading5SemiBold,
+        headlineSmall: AppTextStyles.heading5SemiBold,
       ),
       colorScheme: ColorScheme.fromSeed(
         seedColor: AppColors.primary500,
@@ -51,17 +51,18 @@ abstract final class AppThemes {
         onSecondary: AppColors.grayscale400,
         surfaceContainerHighest: AppColors.textFiledsLight,
         onSecondaryContainer: AppColors.grayscale950,
+
         outline: AppColors.outlineButtonBorderLight,
       ),
-
+      //iconTheme: IconThemeData(color: AppColors.grayscale950),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary500,
           foregroundColor: AppColors.white,
-          maximumSize: const Size(double.infinity, 56),
-          minimumSize: const Size(56, 56),
+          maximumSize: Size(1.sw, 56.h),
+          minimumSize: Size(56.w, 56.h),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(16.r),
           ),
           textStyle: AppTextStyles.bodyBaseBold,
         ),
@@ -70,31 +71,34 @@ abstract final class AppThemes {
         style: OutlinedButton.styleFrom(
           backgroundColor: AppColors.white,
           foregroundColor: AppColors.grayscale950,
-          maximumSize: const Size(double.infinity, 56),
-          minimumSize: const Size(56, 56),
+          maximumSize: Size(1.sw, 56.h),
+          minimumSize: Size(56.w, 56.h),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(16.r),
             side: BorderSide(color: AppColors.outlineButtonBorderLight),
           ),
-          textStyle: AppTextStyles.bodyBaseBold,
+          textStyle: AppTextStyles.bodyBaseSemiBold,
         ),
       ),
 
       inputDecorationTheme: InputDecorationTheme(
-        hintStyle: AppTextStyles.bodySmallBold,
-        labelStyle: AppTextStyles.bodySmallBold,
-        errorStyle: AppTextStyles.bodySmallBold,
-        contentPadding: const EdgeInsets.symmetric(
-          vertical: 16,
-          horizontal: 20,
+        filled: true,
+        fillColor: AppColors.textFiledsLight,
+
+        hintStyle: AppTextStyles.bodyBaseBold.copyWith(
+          color: AppColors.grayscale400,
         ),
 
+        labelStyle: AppTextStyles.bodySmallBold,
+        errorStyle: AppTextStyles.bodySmallBold,
+        contentPadding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 20.w),
+
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(4),
+          borderRadius: BorderRadius.circular(4.r),
           borderSide: BorderSide(color: AppColors.outlineButtonBorderLight),
         ),
 
-        constraints: BoxConstraints(minHeight: 56),
+        constraints: BoxConstraints(minHeight: 56.h),
       ),
     );
   }

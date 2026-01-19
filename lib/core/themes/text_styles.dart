@@ -1,134 +1,190 @@
 library;
 
 import 'dart:ui' show FontWeight;
+
 import 'package:flutter/widgets.dart' show TextStyle;
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 abstract final class AppTextStyles {
   static const String fontFamily = 'Cairo';
 
   // Heading 1 - 48px
-  static const TextStyle heading1Bold = TextStyle(
+  static TextStyle heading1Bold = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 48,
+    fontSize: 48.sp,
     fontWeight: FontWeight.bold,
     height: 1.4,
   );
-  static const TextStyle heading1Regular = TextStyle(
+  static TextStyle heading1Regular = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 48,
+    fontSize: 48.sp,
     fontWeight: FontWeight.w400,
+    height: 1.4,
+  );
+  static TextStyle heading1SemiBold = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 48.sp,
+    fontWeight: FontWeight.w600,
     height: 1.4,
   );
 
   // Heading 2 - 40px
-  static const TextStyle heading2Bold = TextStyle(
+  static TextStyle heading2Bold = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 40,
+    fontSize: 40.sp,
     fontWeight: FontWeight.bold,
     height: 1.4,
   );
-  static const TextStyle heading2Regular = TextStyle(
+  static TextStyle heading2Regular = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 40,
+    fontSize: 40.sp,
     fontWeight: FontWeight.w400,
+    height: 1.4,
+  );
+  static TextStyle heading2SemiBold = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 40.sp,
+    fontWeight: FontWeight.w600,
     height: 1.4,
   );
 
   // Heading 3 - 33px
-  static const TextStyle heading3Bold = TextStyle(
+  static TextStyle heading3Bold = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 33,
+    fontSize: 33.sp,
     fontWeight: FontWeight.bold,
     height: 1.4,
   );
-  static const TextStyle heading3Regular = TextStyle(
+  static TextStyle heading3Regular = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 33,
+    fontSize: 33.sp,
     fontWeight: FontWeight.w400,
+    height: 1.4,
+  );
+  static TextStyle heading3SemiBold = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 33.sp,
+    fontWeight: FontWeight.w600,
     height: 1.4,
   );
 
   // Heading 4 - 28px
-  static const TextStyle heading4Bold = TextStyle(
+  static TextStyle heading4Bold = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 28,
+    fontSize: 28.sp,
     fontWeight: FontWeight.bold,
     height: 1.4,
   );
-  static const TextStyle heading4Regular = TextStyle(
+  static TextStyle heading4Regular = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 28,
+    fontSize: 28.sp,
     fontWeight: FontWeight.w400,
+    height: 1.4,
+  );
+  static TextStyle heading4SemiBold = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 28.sp,
+    fontWeight: FontWeight.w600,
     height: 1.4,
   );
 
   // Heading 5 - 23px
-  static const TextStyle heading5Bold = TextStyle(
+  static TextStyle heading5Bold = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 23,
+    fontSize: 23.sp,
     fontWeight: FontWeight.bold,
     height: 1.4,
   );
-  static const TextStyle heading5Regular = TextStyle(
+  static TextStyle heading5Regular = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 23,
+    fontSize: 23.sp,
     fontWeight: FontWeight.w400,
+    height: 1.4,
+  );
+  static TextStyle heading5SemiBold = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 23.sp,
+    fontWeight: FontWeight.w600,
     height: 1.4,
   );
 
   // Body Large - 19px
-  static const TextStyle bodyLargeBold = TextStyle(
+  static TextStyle bodyLargeBold = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 19,
+    fontSize: 19.sp,
     fontWeight: FontWeight.bold,
     height: 1.4,
   );
-  static const TextStyle bodyLargeRegular = TextStyle(
+  static TextStyle bodyLargeRegular = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 19,
+    fontSize: 19.sp,
     fontWeight: FontWeight.w400,
+    height: 1.4,
+  );
+  static TextStyle bodyLargeSemiBold = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w600,
     height: 1.4,
   );
 
   // Body Base - 16px
-  static const TextStyle bodyBaseBold = TextStyle(
+  static TextStyle bodyBaseBold = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: FontWeight.bold,
     height: 1.4,
   );
-  static const TextStyle bodyBaseRegular = TextStyle(
+  static TextStyle bodyBaseRegular = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w400,
+    height: 1.4,
+  );
+  static TextStyle bodyBaseSemiBold = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w600,
     height: 1.4,
   );
 
   // Body Small - 13px
-  static const TextStyle bodySmallBold = TextStyle(
+  static TextStyle bodySmallBold = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 13,
+    fontSize: 13.sp,
     fontWeight: FontWeight.bold,
     height: 1.4,
   );
-  static const TextStyle bodySmallRegular = TextStyle(
+  static TextStyle bodySmallRegular = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 13,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w400,
+    height: 1.4,
+  );
+  static TextStyle bodySmallSemiBold = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w600,
     height: 1.4,
   );
 
   // Body X-Small - 11px
-  static const TextStyle bodyXSmallBold = TextStyle(
+  static TextStyle bodyXSmallBold = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 11,
+    fontSize: 11.sp,
     fontWeight: FontWeight.bold,
     height: 1.4,
   );
-  static const TextStyle bodyXSmallRegular = TextStyle(
+  static TextStyle bodyXSmallRegular = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 11,
+    fontSize: 11.sp,
     fontWeight: FontWeight.w400,
+    height: 1.4,
+  );
+  static TextStyle bodyXSmallSemiBold = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w600,
     height: 1.4,
   );
 }
