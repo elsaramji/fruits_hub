@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruits_hub/test/demo_test_themes.dart';
+import 'package:fruits_hub/features/onboarding/presentations/splash_view.dart';
 
 import 'core/themes/themes_data.dart';
 
@@ -21,7 +21,7 @@ class MainPoint extends StatelessWidget {
         return MaterialApp(
           theme: AppThemes.themeDataLight(),
           debugShowCheckedModeBanner: false,
-          home: DemoTestThemes(),
+          home: SplashView(),
         );
       },
     );

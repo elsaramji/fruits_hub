@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show SystemChrome, SystemUiMode;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../core/icons/app_icons.dart';
 
-class DemoTestThemes extends StatelessWidget {
+class DemoTestThemes extends StatefulWidget {
   const DemoTestThemes({super.key});
+
+  @override
+  State<DemoTestThemes> createState() => _DemoTestThemesState();
+}
+
+class _DemoTestThemesState extends State<DemoTestThemes> {
+  @override
+  void initState() {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
