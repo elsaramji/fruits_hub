@@ -1,0 +1,33 @@
+
+
+
+{
+    "@@locale": "ar",
+    "appName": "FruitHUB",
+    "welcome": "مرحباً بك",
+    "onBoardingTitle1": "مرحباً بك في FruitHUB",
+    "onBoardingTitle2": "اكتشف فواكه طازجة",
+    "onBoardingDescription1":"اكتشف تجربة تسوق فريدة مع FruitHUB. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.",
+    "onBoardingDescription2": "نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية",
+    "startNow": "ابدأ الآن",
+    "next": "التالي",
+    "searchPlaceholder": "ابحث عن فواكهك المفضلة",
+    "seeAll": "مشاهدة الكل",
+    "login": "تسجيل الدخول",
+    "createAccount": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "orSignInWith": "أو قم بتسجيل الدخول بواسطة",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "alreadyHaveAccount": "تمتلك حساباً بالفعل؟",
+    "categories": "الفئات",
+    "fruits": "فواكه",
+    "vegetables": "خضروات",
+    "bestSellers": "الأكثر مبيعاً",
+    "addToCart": "إضافة إلى السلة",
+    "shoppingCart": "سلة التسوق",
+    "checkout": "الدفع",
+    "total": "الإجمالي",
+    "shippingAddress": "عنوان الشحن"
+}

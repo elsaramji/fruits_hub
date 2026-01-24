@@ -1,0 +1,91 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Arabic (`ar`).
+class AppLocalizationsAr extends AppLocalizations {
+  AppLocalizationsAr([String locale = 'ar']) : super(locale);
+
+  @override
+  String get appName => 'FruitHUB';
+
+  @override
+  String get welcome => 'مرحباً بك';
+
+  @override
+  String get onBoardingTitle1 => 'مرحباً بك في FruitHUB';
+
+  @override
+  String get onBoardingTitle2 => 'اكتشف فواكه طازجة';
+
+  @override
+  String get onBoardingDescription1 => 'اكتشف تجربة تسوق فريدة مع FruitHUB. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.';
+
+  @override
+  String get onBoardingDescription2 => 'نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية';
+
+  @override
+  String get startNow => 'ابدأ الآن';
+
+  @override
+  String get next => 'التالي';
+
+  @override
+  String get searchPlaceholder => 'ابحث عن فواكهك المفضلة';
+
+  @override
+  String get seeAll => 'مشاهدة الكل';
+
+  @override
+  String get login => 'تسجيل الدخول';
+
+  @override
+  String get createAccount => 'إنشاء حساب';
+
+  @override
+  String get email => 'البريد الإلكتروني';
+
+  @override
+  String get password => 'كلمة المرور';
+
+  @override
+  String get forgotPassword => 'نسيت كلمة المرور؟';
+
+  @override
+  String get orSignInWith => 'أو قم بتسجيل الدخول بواسطة';
+
+  @override
+  String get dontHaveAccount => 'ليس لديك حساب؟';
+
+  @override
+  String get alreadyHaveAccount => 'تمتلك حساباً بالفعل؟';
+
+  @override
+  String get categories => 'الفئات';
+
+  @override
+  String get fruits => 'فواكه';
+
+  @override
+  String get vegetables => 'خضروات';
+
+  @override
+  String get bestSellers => 'الأكثر مبيعاً';
+
+  @override
+  String get addToCart => 'إضافة إلى السلة';
+
+  @override
+  String get shoppingCart => 'سلة التسوق';
+
+  @override
+  String get checkout => 'الدفع';
+
+  @override
+  String get total => 'الإجمالي';
+
+  @override
+  String get shippingAddress => 'عنوان الشحن';
+}
