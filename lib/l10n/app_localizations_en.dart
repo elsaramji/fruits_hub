@@ -30,6 +30,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get startNow => 'Start Now';
 
   @override
+  String get skip => 'Skip';
+
+  @override
   String get next => 'Next';
 
   @override

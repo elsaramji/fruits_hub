@@ -30,6 +30,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get startNow => 'ابدأ الآن';
 
   @override
+  String get skip => 'تخطي';
+
+  @override
   String get next => 'التالي';
 
   @override
