@@ -15,12 +15,9 @@ import 'package:flutter/material.dart'
         Text,
         Stack;
 import 'package:flutter/services.dart' show SystemUiOverlayStyle, SystemChrome;
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 import 'package:fruits_hub/core/utils/svgs_assets.dart';
-import 'package:fruits_hub/features/onboarding/presentations/state/onboarding_cubit/onboarding_cubit.dart';
-
 import '../widgets/on_boarding_get_start.dart';
 import '../widgets/on_boarding_indicator.dart';
 import '../widgets/on_boarding_vector.dart';
@@ -51,9 +48,7 @@ class _OnboardingViewState extends State<OnboardingView> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => OnboardingCubit(),
-      child: Scaffold(
+    return Scaffold(
         extendBodyBehindAppBar: true,
         appBar: currentPage == 0 ? const OnboardingAppBar() : null,
         body: Stack(
@@ -100,7 +95,7 @@ class _OnboardingViewState extends State<OnboardingView> {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: OnBoardingGetStart(currentPage: currentPage),
-      ),
+      
     );
   }
 }

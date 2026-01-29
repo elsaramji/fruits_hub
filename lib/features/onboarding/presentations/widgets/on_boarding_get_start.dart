@@ -10,11 +10,9 @@ import 'package:flutter/material.dart'
         ElevatedButton,
         Padding,
         Visibility;
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
-
-import '../state/onboarding_cubit/onboarding_cubit.dart';
+import '../../controls/get_started.dart';
 
 class OnBoardingGetStart extends StatelessWidget {
   const OnBoardingGetStart({super.key, required this.currentPage});
@@ -29,7 +27,7 @@ class OnBoardingGetStart extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 16.w),
         child: ElevatedButton(
           onPressed: () {
-            context.read<OnboardingCubit>().changeViewed();
+            getStarted(context);
           },
           child: SizedBox(
             width: 1.sw,
@@ -39,4 +37,6 @@ class OnBoardingGetStart extends StatelessWidget {
       ),
     );
   }
+
+
 }
