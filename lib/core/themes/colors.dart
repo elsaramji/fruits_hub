@@ -11,11 +11,13 @@ abstract final class AppColors {
 
   static const Color backgroundDark = Color(0xFF0D0D0D); //#0D0D0D
   //custom colors
-
   static const Color textFiledsLight = Color(0xFFF9FAFA);
   static const Color textFiledsBodersLight = Color(0xFFE6E9EA);
   //outline button colors
   static const Color outlineButtonBorderLight = Color(0xFFDDDFDF);
+  // onboarding colors
+  static const Color onboardingBackground = Color(0xFFFADA9E);
+  static const Color onboardingBackground2 = Color(0xFFB0E8C7);
 
   // Grayscale
   static const Color grayscale50 = Color(0xFFF2F3F3);
