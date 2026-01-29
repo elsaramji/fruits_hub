@@ -9,13 +9,19 @@ class AppLocalizationsAr extends AppLocalizations {
   AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
+  String get appName1 => 'Fruit';
+
+  @override
+  String get appName2 => 'HUB';
+
+  @override
   String get appName => 'FruitHUB';
 
   @override
   String get welcome => 'مرحباً بك';
 
   @override
-  String get onBoardingTitle1 => 'مرحباً بك في FruitHUB';
+  String get onBoardingTitle1 => 'مرحباً بك في';
 
   @override
   String get onBoardingTitle2 => 'اكتشف فواكه طازجة';

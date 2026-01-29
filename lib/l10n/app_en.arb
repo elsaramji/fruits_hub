@@ -1,8 +1,10 @@
 {
     "@@locale": "en",
+    "appName1": "Fruit",
+    "appName2": "HUB",
     "appName": "FruitHUB",
     "welcome": "Welcome",
-    "onBoardingTitle1": "Welcome to FruitHUB",
+    "onBoardingTitle1": "Welcome to",
     "onBoardingTitle2": "Discover Fresh Fruits",
     "onBoardingDescription1": "Discover a unique shopping experience with FruitHUB. Explore our wide selection of premium fresh fruits and get the best deals and high quality.",
     "onBoardingDescription2": "We offer you the best carefully selected fruits. Check out details, images and reviews to ensure you choose the perfect fruit.",

@@ -9,13 +9,19 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get appName1 => 'Fruit';
+
+  @override
+  String get appName2 => 'HUB';
+
+  @override
   String get appName => 'FruitHUB';
 
   @override
   String get welcome => 'Welcome';
 
   @override
-  String get onBoardingTitle1 => 'Welcome to FruitHUB';
+  String get onBoardingTitle1 => 'Welcome to';
 
   @override
   String get onBoardingTitle2 => 'Discover Fresh Fruits';

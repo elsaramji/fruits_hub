@@ -95,6 +95,18 @@ abstract class AppLocalizations {
     Locale('en')
   ];
 
+  /// No description provided for @appName1.
+  ///
+  /// In en, this message translates to:
+  /// **'Fruit'**
+  String get appName1;
+
+  /// No description provided for @appName2.
+  ///
+  /// In en, this message translates to:
+  /// **'HUB'**
+  String get appName2;
+
   /// No description provided for @appName.
   ///
   /// In en, this message translates to:
@@ -110,7 +122,7 @@ abstract class AppLocalizations {
   /// No description provided for @onBoardingTitle1.
   ///
   /// In en, this message translates to:
-  /// **'Welcome to FruitHUB'**
+  /// **'Welcome to'**
   String get onBoardingTitle1;
 
   /// No description provided for @onBoardingTitle2.
