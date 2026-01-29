@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 
@@ -10,9 +9,7 @@ class OnboardingCubit extends Cubit<OnboardingState> with HydratedMixin {
   }
 
   void changeViewed() {
-    log("changeViewed : ${state.isViewed}");
     emit(OnboardingViewed(isViewed: true));
-    log("changeViewed : ${state.isViewed}");
   }
 
   @override

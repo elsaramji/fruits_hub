@@ -15,10 +15,9 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
+import 'package:fruits_hub/features/onboarding/controls/get_started.dart';
 import 'package:fruits_hub/features/onboarding/presentations/state/localization_cubit/localization_cubit.dart'
     show LocalizationCubit;
-
-import '../state/onboarding_cubit/onboarding_cubit.dart';
 
 class OnboardingAppBar extends StatefulWidget implements PreferredSizeWidget {
   const OnboardingAppBar({super.key});
@@ -41,7 +40,7 @@ class _OnboardingAppBarState extends State<OnboardingAppBar> {
         children: [
           GestureDetector(
             onTap: () {
-              context.read<OnboardingCubit>().changeViewed();
+              getStarted(context);
             },
             child: Text(
               context.local.skip,
@@ -49,6 +48,7 @@ class _OnboardingAppBarState extends State<OnboardingAppBar> {
               style: context.textTheme.bodySmall,
             ),
           ),
+
           Spacer(),
 
           Text("AR"),
