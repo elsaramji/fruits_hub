@@ -3,8 +3,8 @@ import 'package:flutter/services.dart' show SystemChrome, SystemUiMode;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart' show SvgPicture;
 import 'package:fruits_hub/test/demo_test_themes.dart';
-import '../../../core/utils/svgs_assets.dart';
-import 'widgets/animation_svg.dart';
+import '../../../../core/utils/svgs_assets.dart';
+import '../widgets/animation_svg.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

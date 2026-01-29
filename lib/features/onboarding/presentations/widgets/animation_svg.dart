@@ -1,6 +1,11 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'
+    show
+        StatelessWidget,
+        AnimationController,
+        BuildContext,
+        Widget,
+        FadeTransition;
 import 'package:flutter_svg/svg.dart' show SvgPicture;
-
 
 class AnimationSvg extends StatelessWidget {
   final AnimationController controller;
