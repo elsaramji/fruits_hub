@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fruits_hub/features/auth/presentation/views/login_view.dart';
 import 'package:fruits_hub/features/onboarding/presentations/state/onboarding_cubit/onboarding_cubit.dart'
     show OnboardingCubit;
 import 'package:fruits_hub/features/onboarding/presentations/views/onboarding_view.dart'
@@ -31,7 +32,7 @@ class RouterConfig {
       ),
       GoRoute(
         path: RouterName.login,
-        builder: (context, state) => const Scaffold(),
+        builder: (context, state) => const LoginView(),
       ),
     ],
   );

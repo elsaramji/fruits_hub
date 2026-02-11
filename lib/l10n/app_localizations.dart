@@ -206,8 +206,32 @@ abstract class AppLocalizations {
   /// No description provided for @orSignInWith.
   ///
   /// In en, this message translates to:
-  /// **'Or sign in with'**
+  /// **'Or'**
   String get orSignInWith;
+
+  /// No description provided for @pleaseEnterYourEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter your email'**
+  String get pleaseEnterYourEmail;
+
+  /// No description provided for @pleaseEnterYourPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter your password'**
+  String get pleaseEnterYourPassword;
+
+  /// No description provided for @emailMustBeValid.
+  ///
+  /// In en, this message translates to:
+  /// **'email@domain.com'**
+  String get emailMustBeValid;
+
+  /// No description provided for @passwordMustBeValid.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must be at least 8 characters'**
+  String get passwordMustBeValid;
 
   /// No description provided for @dontHaveAccount.
   ///
@@ -220,6 +244,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Already have an account?'**
   String get alreadyHaveAccount;
+
+  /// No description provided for @google.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with Google'**
+  String get google;
+
+  /// No description provided for @facebook.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with Facebook'**
+  String get facebook;
+
+  /// No description provided for @apple.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with Apple'**
+  String get apple;
 
   /// No description provided for @categories.
   ///

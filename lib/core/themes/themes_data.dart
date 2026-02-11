@@ -18,6 +18,7 @@ import 'package:flutter/material.dart'
         BoxConstraints,
         InputDecorationTheme;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'colors.dart';
 import 'text_styles.dart';
 
@@ -83,6 +84,7 @@ abstract final class AppThemes {
 
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
+
         fillColor: AppColors.textFiledsLight,
 
         hintStyle: AppTextStyles.bodyBaseBold.copyWith(
@@ -94,8 +96,11 @@ abstract final class AppThemes {
         contentPadding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 20.w),
 
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(4.r),
-          borderSide: BorderSide(color: AppColors.outlineButtonBorderLight),
+          borderRadius: BorderRadius.circular(12.r),
+          borderSide: BorderSide(
+            color: AppColors.outlineButtonBorderLight,
+            width: 1.sp,
+          ),
         ),
 
         constraints: BoxConstraints(minHeight: 56.h),

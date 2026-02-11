@@ -72,6 +72,4 @@ abstract final class AppColors {
   static const Color primary950 = Color(0xFF06140C);
 }
 
-abstract class App {}
 
-final class App2 extends App {}

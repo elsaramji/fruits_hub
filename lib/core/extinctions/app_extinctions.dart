@@ -1,11 +1,10 @@
-
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'
+    show BuildContext, ThemeData, TextTheme, ColorScheme, Theme;
 import 'package:fruits_hub/l10n/app_localizations.dart';
 
 extension LocalExtinction on BuildContext {
   AppLocalizations get local => AppLocalizations.of(this)!;
 }
-
 
 extension ThemeExtinction on BuildContext {
   ThemeData get theme => Theme.of(this);

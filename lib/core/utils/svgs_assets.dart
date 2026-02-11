@@ -9,4 +9,7 @@ abstract final class AppSvgs {
       'assets/svgs/fruit_basket_onboarding.svg';
   static const String pineapplesOnboarding =
       'assets/svgs/pineapple_cuate_onboarding.svg';
+  static const String googleSvgBold = 'assets/svgs/google.svg';
+  static const String appleSvgBold = 'assets/svgs/apple.svg';
+  static const String facebookSvgBold = 'assets/svgs/facebook.svg';
 }
