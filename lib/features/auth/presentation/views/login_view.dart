@@ -3,18 +3,16 @@ import 'package:flutter/material.dart'
         StatelessWidget,
         BuildContext,
         Widget,
-        Text,
-        AppBar,
         EdgeInsets,
         SizedBox,
         ListView,
         Padding,
-        Scaffold;
+        Scaffold,
+        ScrollPhysics;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
-
-import '../../../../core/themes/text_styles.dart';
-import '../widgets/auth_form_widget.dart';
+import '../../../../core/utils/components/text_app_bar.dart';
+import '../widgets/login_form_widget.dart';
 import '../widgets/auth_social_button.dart';
 
 class LoginView extends StatelessWidget {
@@ -23,16 +21,13 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(context.local.login, style: AppTextStyles.bodyLargeBold),
-        centerTitle: true,
-      ),
+      appBar: TextAppBar(title: context.local.login),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.w),
         child: ListView(
+          physics: ScrollPhysics(),
           children: [
-            SizedBox(height: 64.h),
-            AuthWithEmail(),
+            LoginForm(),
             SizedBox(height: 33.h),
             SocialAuthButton(),
           ],

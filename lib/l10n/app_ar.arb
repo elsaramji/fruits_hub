@@ -22,6 +22,8 @@
     "emailMustBeValid":"email@domain.com",
     "passwordMustBeValid":"كلمة المرور يجب أن تكون 8 أحرف على الأقل",
     "createAccount": "إنشاء حساب",
+    "name":"الاسم",
+    "pleaseEnterYourName":"الرجاء إدخال الاسم",
     "email": "البريد الإلكتروني",
     "password": "كلمة المرور",
     "forgotPassword": "نسيت كلمة المرور؟",

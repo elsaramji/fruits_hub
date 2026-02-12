@@ -11,6 +11,13 @@ abstract final class AuthValidation {
     return null;
   }
 
+  static String? nameValidator(String? value, BuildContext context) {
+    if (value == null || value.isEmpty) {
+      return context.local.pleaseEnterYourName;
+    }
+    return null;
+  }
+
   static String? emailValidatro(String? value, BuildContext context) {
     if (value == null || value.isEmpty) {
       return context.local.pleaseEnterYourEmail;

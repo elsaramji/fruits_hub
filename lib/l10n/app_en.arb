@@ -24,6 +24,8 @@
     "emailMustBeValid":"email@domain.com",
     "passwordMustBeValid":"Password must be at least 8 characters",
     "dontHaveAccount": "Don't have an account?",
+    "name":"Name",
+    "pleaseEnterYourName":"Please enter your name",
     "alreadyHaveAccount": "Already have an account?",
     "google": "Sign in with Google",
     "facebook": "Sign in with Facebook",

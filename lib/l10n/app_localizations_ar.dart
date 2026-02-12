@@ -81,6 +81,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get dontHaveAccount => 'ليس لديك حساب؟';
 
   @override
+  String get name => 'الاسم';
+
+  @override
+  String get pleaseEnterYourName => 'الرجاء إدخال الاسم';
+
+  @override
   String get alreadyHaveAccount => 'تمتلك حساباً بالفعل؟';
 
   @override

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fruits_hub/features/auth/presentation/views/login_view.dart';
-import 'package:fruits_hub/features/onboarding/presentations/state/onboarding_cubit/onboarding_cubit.dart'
-    show OnboardingCubit;
-import 'package:fruits_hub/features/onboarding/presentations/views/onboarding_view.dart'
-    show OnboardingView;
 import 'package:go_router/go_router.dart' show GoRouter, GoRoute;
+
+import '../../../features/auth/presentation/views/login_view.dart';
+import '../../../features/auth/presentation/views/signup_view.dart';
+import '../../../features/onboarding/presentations/state/onboarding_cubit/onboarding_cubit.dart';
+import '../../../features/onboarding/presentations/views/onboarding_view.dart';
 
 abstract final class RouterName {
   static const String onboarding = '/onboarding';
@@ -33,6 +33,10 @@ class RouterConfig {
       GoRoute(
         path: RouterName.login,
         builder: (context, state) => const LoginView(),
+      ),
+      GoRoute(
+        path: RouterName.register,
+        builder: (context, state) => const SignUpView(),
       ),
     ],
   );
