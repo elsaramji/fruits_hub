@@ -17,8 +17,11 @@ import 'package:flutter/material.dart'
         Widget,
         ScrollPhysics,
         TextEditingController;
+import 'package:flutter_bloc/flutter_bloc.dart' show ReadContext;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
+import 'package:fruits_hub/features/auth/presentation/state/auth_cubit.dart'
+    show AuthCubit;
 import 'package:go_router/go_router.dart';
 import '../../../../core/config/routes/router.dart';
 import '../../../../core/utils/components/email_text_input.dart';
@@ -62,7 +65,13 @@ class _SginUpFormState extends State<SginUpForm> {
               SizedBox(height: 33.h),
               ElevatedButton(
                 onPressed: () {
-                  if (_formKey.currentState!.validate()) {}
+                  if (_formKey.currentState!.validate()) {
+                    context.read<AuthCubit>().register(
+                      name: _nameController.text,
+                      email: _emailController.text,
+                      password: _passwordController.text,
+                    );
+                  }
                 },
                 style: ElevatedButton.styleFrom(fixedSize: Size(1.sw, 56.h)),
                 child: Text(context.local.createAccount),

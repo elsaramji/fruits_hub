@@ -34,11 +34,12 @@ class LoginView extends StatelessWidget {
       listener: (context, state) {
         if (state.isAuthenticated) {
           context.go(RouterName.home);
-        }
-        if (state is AuthFailure) {
-          ScaffoldMessenger.of(
-            context,
-          ).showSnackBar(SnackBar(content: Text(state.error.message)));
+        } else if (state is AuthFailure) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(state.error.message, textAlign: TextAlign.left),
+            ),
+          );
         }
       },
       builder: (context, state) {
@@ -46,9 +47,6 @@ class LoginView extends StatelessWidget {
           appBar: TextAppBar(title: context.local.login),
           body: Stack(
             children: [
-              Positioned.fill(
-                child: WaitProgress(isWait: state is AuthLoading),
-              ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16.w),
                 child: ListView(
@@ -59,6 +57,9 @@ class LoginView extends StatelessWidget {
                     SocialAuthButton(),
                   ],
                 ),
+              ),
+              Positioned.fill(
+                child: WaitProgress(isWait: state is AuthLoading),
               ),
             ],
           ),

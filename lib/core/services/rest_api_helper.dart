@@ -1,9 +1,8 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:fruits_hub/core/services/constant/api_constant.dart'
-    show ApiConstant;
-import 'package:fruits_hub/core/services/errors/request_error.dart';
 import 'package:injectable/injectable.dart';
+import 'constant/api_constant.dart';
+import 'errors/request_error.dart';
 
 @LazySingleton()
 class RestApi {
@@ -20,7 +19,7 @@ class RestApi {
           },
           responseType: ResponseType.json,
           validateStatus: (status) {
-            return status! < 500;
+            return status! <= 500;
           },
         ),
       );
@@ -40,9 +39,11 @@ class RestApi {
         cancelToken: cancelToken,
         onReceiveProgress: onReceiveProgress,
       );
-      return Right(response);
+      return response.statusCode! >= 200
+          ? Right(response)
+          : Left(RequestError.fromStatusCode(response.statusCode));
     } on DioException catch (e) {
-      return Left(RequestError.fromStatusCode(e.response?.statusCode));
+      return Left(RequestError.fromDioException(e));
     } catch (e) {
       return Left(RequestError(message: 'Unknown error'));
     }
@@ -69,16 +70,11 @@ class RestApi {
       );
       return response.statusCode! >= 200
           ? Right(response)
-          : Left(
-              RequestError(
-                message: response.data["messages"],
-                statusCode: response.statusCode,
-              ),
-            );
+          : Left(RequestError.fromStatusCode(response.statusCode));
     } on DioException catch (e) {
-      return Left(RequestError.fromStatusCode(e.response?.statusCode));
+      return Left(RequestError.fromDioException(e));
     } catch (e) {
-      return Left(RequestError(message: 'Unknown error'));
+      return Left(RequestError(message: 'Unknown error $e'));
     }
   }
 
@@ -101,11 +97,13 @@ class RestApi {
         onSendProgress: onSendProgress,
         onReceiveProgress: onReceiveProgress,
       );
-      return Right(response);
+      return response.statusCode! >= 200
+          ? Right(response)
+          : Left(RequestError.fromStatusCode(response.statusCode));
     } on DioException catch (e) {
-      return Left(RequestError.fromStatusCode(e.response?.statusCode));
+      return Left(RequestError.fromDioException(e));
     } catch (e) {
-      return Left(RequestError(message: 'Unknown error'));
+      return Left(RequestError(message: 'Unknown error $e'));
     }
   }
 
@@ -124,11 +122,13 @@ class RestApi {
         options: options,
         cancelToken: cancelToken,
       );
-      return Right(response);
+      return response.statusCode! >= 200
+          ? Right(response)
+          : Left(RequestError.fromStatusCode(response.statusCode));
     } on DioException catch (e) {
-      return Left(RequestError.fromStatusCode(e.response?.statusCode));
+      return Left(RequestError.fromDioException(e));
     } catch (e) {
-      return Left(RequestError(message: 'Unknown error'));
+      return Left(RequestError(message: 'Unknown error $e'));
     }
   }
 }
