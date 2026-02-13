@@ -1,5 +1,22 @@
 import 'package:flutter/material.dart'
-    show BuildContext, Column, CrossAxisAlignment, ElevatedButton, Form, FormState, GlobalKey, ListView, MainAxisAlignment, Size, SizedBox, State, StatefulWidget, Text, Widget, ScrollPhysics;
+    show
+        BuildContext,
+        Column,
+        CrossAxisAlignment,
+        ElevatedButton,
+        Form,
+        FormState,
+        GlobalKey,
+        ListView,
+        MainAxisAlignment,
+        Size,
+        SizedBox,
+        State,
+        StatefulWidget,
+        Text,
+        Widget,
+        ScrollPhysics,
+        TextEditingController;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 import 'package:go_router/go_router.dart';
@@ -17,6 +34,9 @@ class SginUpForm extends StatefulWidget {
 
 class _SginUpFormState extends State<SginUpForm> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -30,9 +50,15 @@ class _SginUpFormState extends State<SginUpForm> {
             crossAxisAlignment: CrossAxisAlignment.end,
             spacing: 16.h,
             children: [
-              NameTextInput(formKey: _formKey),
-              EmailTextInput(formKey: _formKey),
-              PasswordTextInput(formKey: _formKey),
+              NameTextInput(formKey: _formKey, nameController: _nameController),
+              EmailTextInput(
+                formKey: _formKey,
+                emailController: _emailController,
+              ),
+              PasswordTextInput(
+                formKey: _formKey,
+                passwordController: _passwordController,
+              ),
               SizedBox(height: 33.h),
               ElevatedButton(
                 onPressed: () {
@@ -54,5 +80,13 @@ class _SginUpFormState extends State<SginUpForm> {
         ),
       ],
     );
+  }
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _emailController.dispose();
+    _passwordController.dispose();
+    super.dispose();
   }
 }

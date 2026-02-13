@@ -1,17 +1,6 @@
 import 'package:flutter/cupertino.dart' show TextInputAction;
 import 'package:flutter/material.dart'
-    show
-        StatefulWidget,
-        FormState,
-        GlobalKey,
-        State,
-        BuildContext,
-        Widget,
-        TextInputType,
-        Icon,
-        IconButton,
-        InputDecoration,
-        TextFormField;
+    show StatefulWidget, FormState, GlobalKey, State, BuildContext, Widget, TextInputType, Icon, IconButton, InputDecoration, TextFormField, TextEditingController;
 import 'package:flutter/src/widgets/basic.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
@@ -21,10 +10,11 @@ import '../../states/auth_validation.dart';
 import '../../themes/colors.dart';
 
 class PasswordTextInput extends StatefulWidget {
-  const PasswordTextInput({super.key, required GlobalKey<FormState> formKey})
-    : _formKey = formKey;
+  const PasswordTextInput({super.key, required GlobalKey<FormState> formKey, required TextEditingController passwordController})
+    : _formKey = formKey, _passwordController = passwordController;
 
   final GlobalKey<FormState> _formKey;
+  final TextEditingController _passwordController;
 
   @override
   State<PasswordTextInput> createState() => _PasswordTextInputState();
@@ -36,6 +26,7 @@ class _PasswordTextInputState extends State<PasswordTextInput> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: widget._passwordController,
       keyboardType: TextInputType.visiblePassword,
       onFieldSubmitted: (value) {
         AuthValidation.submittedFieldValue(value, widget._formKey);

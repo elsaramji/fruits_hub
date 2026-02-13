@@ -7,8 +7,10 @@ import 'package:fruits_hub/core/themes/themes_data.dart' show AppThemes;
 import 'package:fruits_hub/features/onboarding/presentations/state/onboarding_cubit/onboarding_cubit.dart'
     show OnboardingCubit;
 
+import '../../features/auth/presentation/state/auth_cubit.dart';
 import '../../features/onboarding/presentations/state/localization_cubit/localization_cubit.dart';
 import '../../l10n/app_localizations.dart' show AppLocalizations;
+import '../injection/injection.dart';
 
 class AppMaterials extends StatelessWidget {
   const AppMaterials({super.key});
@@ -19,6 +21,7 @@ class AppMaterials extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => LocalizationCubit()),
         BlocProvider(create: (context) => OnboardingCubit()),
+        BlocProvider(create: (context) => getIt<AuthCubit>()),
       ],
       child: BlocBuilder<LocalizationCubit, LocalizationState>(
         builder: (context, state) {

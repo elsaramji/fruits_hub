@@ -1,7 +1,10 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart' show GoRouter, GoRoute;
 
+import '../../../features/auth/presentation/state/auth_cubit.dart';
 import '../../../features/auth/presentation/views/login_view.dart';
 import '../../../features/auth/presentation/views/signup_view.dart';
 import '../../../features/onboarding/presentations/state/onboarding_cubit/onboarding_cubit.dart';
@@ -20,11 +23,19 @@ abstract final class RouterName {
   static const String settings = '/settings';
 }
 
+String initialLocation(BuildContext context) {
+  if (context.read<OnboardingCubit>().state.isViewed) {
+    log(context.read<OnboardingCubit>().state.isViewed.toString());
+    return context.read<AuthCubit>().state.isAuthenticated
+        ? RouterName.login
+        : RouterName.login;
+  }
+  return RouterName.onboarding;
+}
+
 class RouterConfig {
   static router(BuildContext context) => GoRouter(
-    initialLocation: context.read<OnboardingCubit>().state.isViewed
-        ? RouterName.login
-        : RouterName.onboarding,
+    initialLocation: initialLocation(context),
     routes: [
       GoRoute(
         path: RouterName.onboarding,
@@ -37,6 +48,11 @@ class RouterConfig {
       GoRoute(
         path: RouterName.register,
         builder: (context, state) => const SignUpView(),
+      ),
+      GoRoute(
+        path: RouterName.home,
+        builder: (context, state) =>
+            const Scaffold(body: Center(child: Text('Home'))),
       ),
     ],
   );

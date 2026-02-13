@@ -9,20 +9,28 @@ import 'package:flutter/material.dart'
         TextInputAction,
         TextDirection,
         InputDecoration,
-        TextFormField;
+        TextFormField,
+        TextEditingController;
 import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 
 import '../../states/auth_validation.dart';
 
 class EmailTextInput extends StatelessWidget {
-  const EmailTextInput({super.key, required GlobalKey<FormState> formKey})
-    : _formKey = formKey;
+  const EmailTextInput({
+    super.key,
+    required GlobalKey<FormState> formKey,
+    required TextEditingController emailController,
+  }) : _emailController = emailController,
+       _formKey = formKey;
+
+  final TextEditingController _emailController;
 
   final GlobalKey<FormState> _formKey;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: _emailController,
       keyboardType: TextInputType.emailAddress,
       onFieldSubmitted: (value) {
         AuthValidation.submittedFieldValue(value, _formKey);

@@ -11,6 +11,7 @@ import 'package:flutter/material.dart'
         Colors,
         AppBar,
         Padding;
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../themes/colors.dart';
@@ -25,6 +26,7 @@ class TextAppBar extends StatelessWidget implements PreferredSizeWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
       child: AppBar(
+        systemOverlayStyle: SystemUiOverlayStyle.dark,
         title: Text(title, style: AppTextStyles.bodyLargeBold),
         centerTitle: true,
         iconTheme: IconThemeData(
