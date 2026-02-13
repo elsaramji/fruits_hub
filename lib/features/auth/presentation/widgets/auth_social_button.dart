@@ -41,7 +41,7 @@ class SocialAuthButton extends StatelessWidget {
           ],
         ),
         OutlinedButton(
-          onPressed: () {},
+          onPressed: null,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -55,7 +55,7 @@ class SocialAuthButton extends StatelessWidget {
           ),
         ),
         OutlinedButton(
-          onPressed: () {},
+          onPressed: null,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [

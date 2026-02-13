@@ -32,8 +32,10 @@ class LoginView extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {
-        if (state.isAuthenticated) {
-          context.go(RouterName.home);
+        if (state.role != null) {
+          context.go(
+            state.role == 'admin' ? RouterName.adminHome : RouterName.home,
+          );
         } else if (state is AuthFailure) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(

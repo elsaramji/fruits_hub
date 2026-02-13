@@ -39,7 +39,7 @@ class RestApi {
         cancelToken: cancelToken,
         onReceiveProgress: onReceiveProgress,
       );
-      return response.statusCode! >= 200
+      return response.statusCode! >= 200 && response.statusCode! < 300
           ? Right(response)
           : Left(RequestError.fromStatusCode(response.statusCode));
     } on DioException catch (e) {
@@ -68,7 +68,7 @@ class RestApi {
         onSendProgress: onSendProgress,
         onReceiveProgress: onReceiveProgress,
       );
-      return response.statusCode! >= 200
+      return response.statusCode! >= 200 && response.statusCode! < 300
           ? Right(response)
           : Left(RequestError.fromStatusCode(response.statusCode));
     } on DioException catch (e) {
@@ -97,7 +97,7 @@ class RestApi {
         onSendProgress: onSendProgress,
         onReceiveProgress: onReceiveProgress,
       );
-      return response.statusCode! >= 200
+      return response.statusCode! >= 200 && response.statusCode! < 300
           ? Right(response)
           : Left(RequestError.fromStatusCode(response.statusCode));
     } on DioException catch (e) {
@@ -122,7 +122,7 @@ class RestApi {
         options: options,
         cancelToken: cancelToken,
       );
-      return response.statusCode! >= 200
+      return response.statusCode! >= 200 && response.statusCode! < 300
           ? Right(response)
           : Left(RequestError.fromStatusCode(response.statusCode));
     } on DioException catch (e) {
