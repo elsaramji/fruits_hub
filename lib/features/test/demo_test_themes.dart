@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show SystemChrome, SystemUiMode;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../core/icons/app_icons.dart';
+import '../../core/icons/app_icons.dart';
 
 class DemoTestThemes extends StatefulWidget {
   const DemoTestThemes({super.key});

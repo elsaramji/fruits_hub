@@ -63,13 +63,40 @@ class AppLocalizationsEn extends AppLocalizations {
   String get forgotPassword => 'Forgot Password?';
 
   @override
-  String get orSignInWith => 'Or sign in with';
+  String get orSignInWith => 'Or';
+
+  @override
+  String get pleaseEnterYourEmail => 'Please enter your email';
+
+  @override
+  String get pleaseEnterYourPassword => 'Please enter your password';
+
+  @override
+  String get emailMustBeValid => 'email@domain.com';
+
+  @override
+  String get passwordMustBeValid => 'Password must be at least 8 characters';
 
   @override
   String get dontHaveAccount => 'Don\'t have an account?';
 
   @override
+  String get name => 'Name';
+
+  @override
+  String get pleaseEnterYourName => 'Please enter your name';
+
+  @override
   String get alreadyHaveAccount => 'Already have an account?';
+
+  @override
+  String get google => 'Sign in with Google';
+
+  @override
+  String get facebook => 'Sign in with Facebook';
+
+  @override
+  String get apple => 'Sign in with Apple';
 
   @override
   String get categories => 'Categories';

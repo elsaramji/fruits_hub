@@ -63,13 +63,40 @@ class AppLocalizationsAr extends AppLocalizations {
   String get forgotPassword => 'نسيت كلمة المرور؟';
 
   @override
-  String get orSignInWith => 'أو قم بتسجيل الدخول بواسطة';
+  String get orSignInWith => 'او';
+
+  @override
+  String get pleaseEnterYourEmail => 'الرجاء إدخال بريدك الإلكتروني';
+
+  @override
+  String get pleaseEnterYourPassword => 'الرجاء إدخال كلمة المرور';
+
+  @override
+  String get emailMustBeValid => 'email@domain.com';
+
+  @override
+  String get passwordMustBeValid => 'كلمة المرور يجب أن تكون 8 أحرف على الأقل';
 
   @override
   String get dontHaveAccount => 'ليس لديك حساب؟';
 
   @override
+  String get name => 'الاسم';
+
+  @override
+  String get pleaseEnterYourName => 'الرجاء إدخال الاسم';
+
+  @override
   String get alreadyHaveAccount => 'تمتلك حساباً بالفعل؟';
+
+  @override
+  String get google => 'تسجيل بواسطة جوجل';
+
+  @override
+  String get facebook => 'تسجيل بواسطة فيسبوك';
+
+  @override
+  String get apple => 'تسجيل بواسطة آبل';
 
   @override
   String get categories => 'الفئات';
