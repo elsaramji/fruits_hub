@@ -19,7 +19,8 @@ import '../../themes/text_styles.dart';
 
 class TextAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
-  const TextAppBar({super.key, required this.title});
+  final double? height;
+  const TextAppBar({super.key, required this.title, this.height});
 
   @override
   Widget build(BuildContext context) {
@@ -42,5 +43,5 @@ class TextAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(100.h);
+  Size get preferredSize => Size.fromHeight(height ?? 100.h);
 }

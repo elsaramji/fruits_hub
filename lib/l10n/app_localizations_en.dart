@@ -18,7 +18,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appName => 'FruitHUB';
 
   @override
-  String get welcome => 'Welcome';
+  String get welcome => 'Welcome ';
 
   @override
   String get onBoardingTitle1 => 'Welcome to';
@@ -97,6 +97,30 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get apple => 'Sign in with Apple';
+
+  @override
+  String get orders => 'Orders';
+
+  @override
+  String get offers => 'Offers';
+
+  @override
+  String get inventory => 'Inventory';
+
+  @override
+  String get home => 'Home';
+
+  @override
+  String get search => 'Search';
+
+  @override
+  String get products => 'Products';
+
+  @override
+  String get profile => 'Profile';
+
+  @override
+  String get cart => 'Cart';
 
   @override
   String get categories => 'Categories';

@@ -18,7 +18,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get appName => 'FruitHUB';
 
   @override
-  String get welcome => 'مرحباً بك';
+  String get welcome => 'مرحباً بك يا';
 
   @override
   String get onBoardingTitle1 => 'مرحباً بك في';
@@ -97,6 +97,30 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get apple => 'تسجيل بواسطة آبل';
+
+  @override
+  String get orders => 'الطلبات';
+
+  @override
+  String get offers => 'العروض';
+
+  @override
+  String get inventory => 'المخزون';
+
+  @override
+  String get home => 'الرئيسية';
+
+  @override
+  String get search => 'البحث';
+
+  @override
+  String get products => 'المنتجات';
+
+  @override
+  String get profile => 'الملف الشخصي';
+
+  @override
+  String get cart => 'السلة';
 
   @override
   String get categories => 'الفئات';
