@@ -2,10 +2,10 @@ import 'package:flutter/material.dart'
     show StatefulWidget, State, BuildContext, Widget, EdgeInsets, Padding, Scaffold, Stack, Positioned;
 import 'package:flutter_bloc/flutter_bloc.dart' show  BlocBuilder;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 import 'package:fruits_hub/features/auth/presentation/state/auth_cubit.dart';
 import 'package:fruits_hub/features/auth/presentation/views/login_view.dart'
     show WaitProgress;
+import '../../../../core/extensions/context_extensions.dart';
 import '../../../../core/utils/components/text_app_bar.dart';
 import '../widgets/signup_form_widget.dart';
 

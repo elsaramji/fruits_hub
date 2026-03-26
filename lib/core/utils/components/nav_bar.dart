@@ -1,9 +1,10 @@
 import 'package:advanced_salomon_bottom_bar/advanced_salomon_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 import 'package:fruits_hub/core/themes/colors.dart' show AppColors;
 import 'package:go_router/go_router.dart';
+
+import '../../extensions/context_extensions.dart';
 
 class NavBar extends StatelessWidget {
   final StatefulNavigationShell navigationShell;

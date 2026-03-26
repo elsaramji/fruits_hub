@@ -46,5 +46,8 @@
     "shoppingCart": "Shopping Cart",
     "checkout": "Checkout",
     "total": "Total",
-    "shippingAddress": "Shipping Address"
+    "shippingAddress": "Shipping Address",
+    "egp": "EGP",
+    "perKilo": "/ Kilo",
+    "quantity": "quantity:"
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart' show BuildContext, FormState, GlobalKey;
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
+
+import '../extensions/context_extensions.dart';
 
 abstract final class AuthValidation {
   static String? passwordVaildator(String? value, BuildContext context) {

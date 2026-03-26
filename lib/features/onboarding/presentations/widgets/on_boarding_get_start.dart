@@ -11,7 +11,8 @@ import 'package:flutter/material.dart'
         Padding,
         Visibility;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
+
+import '../../../../core/extensions/context_extensions.dart';
 import '../../controls/get_started.dart';
 
 class OnBoardingGetStart extends StatelessWidget {

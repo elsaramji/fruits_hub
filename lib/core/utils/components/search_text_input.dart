@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart' show BuildContext, Widget, StatelessWidget, Offset, BoxShadow, BoxDecoration, Icon, InputBorder, EdgeInsets, BoxConstraints, InputDecoration, TextField, Container;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart' show ColorSchemeExtinction, LocalExtinction;
+import 'package:fruits_hub/core/extensions/context_extensions.dart' show ContextExtensions;
 import 'package:fruits_hub/core/icons/app_icons.dart' show AppIcons;
 import 'package:fruits_hub/core/themes/colors.dart' show AppColors;
 

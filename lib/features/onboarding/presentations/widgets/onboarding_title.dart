@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart'
     show StatelessWidget, BuildContext, Widget, Text, TextSpan;
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 import 'package:fruits_hub/core/themes/colors.dart';
+
+import '../../../../core/extensions/context_extensions.dart';
 
 class OnboardingTitle extends StatelessWidget {
   const OnboardingTitle({super.key});

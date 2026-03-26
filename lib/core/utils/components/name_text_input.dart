@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart'
     show FormState, StatelessWidget, GlobalKey, BuildContext, Widget, TextInputType, InputDecoration, TextFormField, TextInputAction, TextEditingController;
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 
+import '../../extensions/context_extensions.dart';
 import '../../states/auth_validation.dart';
 
 class NameTextInput extends StatelessWidget {

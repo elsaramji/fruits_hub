@@ -16,10 +16,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart' show SpinKitFadingCircle;
 import 'package:fruits_hub/core/config/routes/router.dart' show RouterName;
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 import 'package:fruits_hub/features/auth/presentation/state/auth_cubit.dart'
     show AuthCubit, AuthFailure, AuthLoading, AuthState;
 import 'package:go_router/go_router.dart' show GoRouterHelper;
+import '../../../../core/extensions/context_extensions.dart';
 import '../../../../core/themes/colors.dart';
 import '../../../../core/utils/components/text_app_bar.dart';
 import '../widgets/login_form_widget.dart';

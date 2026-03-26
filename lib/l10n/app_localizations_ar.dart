@@ -148,4 +148,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get shippingAddress => 'عنوان الشحن';
+
+  @override
+  String get egp => 'جنية';
+
+  @override
+  String get perKilo => '/ الكيلو';
+
+  @override
+  String get quantity => 'كمية:';
 }

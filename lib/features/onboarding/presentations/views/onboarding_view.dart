@@ -16,8 +16,9 @@ import 'package:flutter/material.dart'
         Stack;
 import 'package:flutter/services.dart' show SystemUiOverlayStyle, SystemChrome;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
+
 import 'package:fruits_hub/core/utils/svgs_assets.dart';
+import '../../../../core/extensions/context_extensions.dart';
 import '../widgets/on_boarding_get_start.dart';
 import '../widgets/on_boarding_indicator.dart';
 import '../widgets/on_boarding_vector.dart';

@@ -14,10 +14,11 @@ import 'package:flutter/material.dart'
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 import 'package:fruits_hub/features/onboarding/controls/get_started.dart';
 import 'package:fruits_hub/features/onboarding/presentations/state/localization_cubit/localization_cubit.dart'
     show LocalizationCubit;
+
+import '../../../../core/extensions/context_extensions.dart';
 
 class OnboardingAppBar extends StatefulWidget implements PreferredSizeWidget {
   const OnboardingAppBar({super.key});

@@ -376,6 +376,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Shipping Address'**
   String get shippingAddress;
+
+  /// No description provided for @egp.
+  ///
+  /// In en, this message translates to:
+  /// **'EGP'**
+  String get egp;
+
+  /// No description provided for @perKilo.
+  ///
+  /// In en, this message translates to:
+  /// **'/ Kilo'**
+  String get perKilo;
+
+  /// No description provided for @quantity.
+  ///
+  /// In en, this message translates to:
+  /// **'quantity:'**
+  String get quantity;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

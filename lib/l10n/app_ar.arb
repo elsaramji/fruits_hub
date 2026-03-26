@@ -46,5 +46,8 @@
     "shoppingCart": "سلة التسوق",
     "checkout": "الدفع",
     "total": "الإجمالي",
-    "shippingAddress": "عنوان الشحن"
+    "shippingAddress": "عنوان الشحن",
+    "egp": "جنية",
+    "perKilo": "/ الكيلو",
+    "quantity": "كمية:"
 }

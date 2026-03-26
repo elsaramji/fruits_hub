@@ -1,25 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'product_card.dart';
+
+
 
 class ProductsListView extends StatelessWidget {
-  const ProductsListView({super.key});
+  final Widget productCard;
+  const ProductsListView({super.key, required this.productCard});
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
       itemCount: 8,
-      clipBehavior: Clip.none,
-      physics: const NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
+      clipBehavior: Clip.hardEdge,
+      physics: ScrollPhysics(),
+      shrinkWrap: false,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        crossAxisSpacing: 16.w,
+        crossAxisSpacing: 8.w,
         mainAxisSpacing: 8.h,
-        childAspectRatio: 0.76,
+        childAspectRatio: 3 / 4,
       ),
       itemBuilder: (context, index) {
-        return const ProductCard();
+        return productCard;
       },
     );
   }

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart'
     show StatefulWidget, FormState, State, GlobalKey, BuildContext, Widget, MainAxisAlignment, CrossAxisAlignment, Text, TextButton, SizedBox, ElevatedButton, Size, Column, Form, TextEditingController;
 import 'package:flutter_bloc/flutter_bloc.dart' show ReadContext;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 import 'package:fruits_hub/core/themes/colors.dart' show AppColors;
 import 'package:fruits_hub/core/themes/text_styles.dart' show AppTextStyles;
 import 'package:go_router/go_router.dart';
 import '../../../../core/config/routes/router.dart';
+import '../../../../core/extensions/context_extensions.dart';
 import '../../../../core/utils/components/email_text_input.dart';
 import '../../../../core/utils/components/password_text_input.dart';
 import '../state/auth_cubit.dart';

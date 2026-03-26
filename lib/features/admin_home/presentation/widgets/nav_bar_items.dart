@@ -1,8 +1,8 @@
 import 'package:advanced_salomon_bottom_bar/advanced_salomon_bottom_bar.dart'
     show AdvancedSalomonBottomBarItem;
 import 'package:flutter/material.dart' show BuildContext;
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart'
-    show LocalExtinction;
+import 'package:fruits_hub/core/extensions/context_extensions.dart'
+    show ContextExtensions;
 import 'package:fruits_hub/core/icons/app_icons.dart' show AppIcons;
 import '../../../../core/utils/components/nav_bar.dart';
 

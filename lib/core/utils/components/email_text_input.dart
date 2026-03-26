@@ -11,8 +11,8 @@ import 'package:flutter/material.dart'
         InputDecoration,
         TextFormField,
         TextEditingController;
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 
+import '../../extensions/context_extensions.dart';
 import '../../states/auth_validation.dart';
 
 class EmailTextInput extends StatelessWidget {

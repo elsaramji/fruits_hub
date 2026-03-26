@@ -19,11 +19,11 @@ import 'package:flutter/material.dart'
         TextEditingController;
 import 'package:flutter_bloc/flutter_bloc.dart' show ReadContext;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 import 'package:fruits_hub/features/auth/presentation/state/auth_cubit.dart'
     show AuthCubit;
 import 'package:go_router/go_router.dart';
 import '../../../../core/config/routes/router.dart';
+import '../../../../core/extensions/context_extensions.dart';
 import '../../../../core/utils/components/email_text_input.dart';
 import '../../../../core/utils/components/name_text_input.dart';
 import '../../../../core/utils/components/password_text_input.dart';

@@ -13,8 +13,8 @@ import 'package:flutter/material.dart'
         Column;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart' show SvgPicture;
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
 
+import '../../../../core/extensions/context_extensions.dart';
 import '../../../../core/themes/colors.dart';
 import '../../../../core/utils/svgs_assets.dart';
 

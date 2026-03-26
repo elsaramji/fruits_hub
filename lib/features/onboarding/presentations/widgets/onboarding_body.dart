@@ -12,7 +12,8 @@ import 'package:flutter/material.dart'
         TextAlign;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:fruits_hub/core/extinctions/app_extinctions.dart';
+
+import '../../../../core/extensions/context_extensions.dart';
 
 class OnboardingBody extends StatelessWidget {
   final String svg;

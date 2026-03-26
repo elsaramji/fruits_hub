@@ -148,4 +148,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get shippingAddress => 'Shipping Address';
+
+  @override
+  String get egp => 'EGP';
+
+  @override
+  String get perKilo => '/ Kilo';
+
+  @override
+  String get quantity => 'quantity:';
 }
